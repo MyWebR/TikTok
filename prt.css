@@ -5,9 +5,13 @@
   text-align: center;
 }
 
+.content-postingan h2 {
+  font-size: 17px;
+}
+
 .content-postingan p {
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   color: #64748b;
 }
 /* end kontent postingan */
@@ -16,12 +20,12 @@
 .pembungkus-content-repost {
   display: flex;
   flex-wrap: wrap; /* Membuat elemen turun ke bawah jika tidak muat */
-  gap: 3px; /* Tambahkan jarak antar elemen jika diperlukan */
+  gap: 1px; /* Tambahkan jarak antar elemen jika diperlukan */
 }
 
 .pembungkus-content-repost .video-1 {
   position: relative; /* Pastikan elemen ini menjadi referensi untuk .status-video yang di dalamnya */
-  flex: 1 1 calc(33.33% - 3px); /* Ukuran fleksibel, sesuaikan dengan jarak antar elemen */
+  flex: 1 1 calc(33.33% - 1px); /* Ukuran fleksibel, sesuaikan dengan jarak antar elemen */
   box-sizing: border-box; /* Pastikan padding dan border tidak mengubah ukuran elemen */
   max-width: calc(33.33% - 0px); /* Maksimal lebar 33.33% dengan jarak */
   margin: 0;
@@ -44,13 +48,13 @@
 }
 
 .status-video img {
-  height: 19px;
+  height: 13px;
 }
 
 .status-video p {
-  font-weight: 500;
-  font-size: 17px;
-  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
   margin-left: 5px; /* Tambahkan jarak antara gambar dan teks */
 }
 
