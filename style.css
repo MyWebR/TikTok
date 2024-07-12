@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* Tambahkan warna latar belakang */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  z-index: 1000; /* Pastikan header di atas elemen lainnya */
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Tambahkan padding untuk ruang di dalam header */
+}
+
+.back img {
+  height: 35px;
+  width: auto;
+}
+
+.akun {
+  margin-left: 47px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-header > .point {
+  border-radius: 100%;
+  background-color: #f59e0b;
+  padding: 0px 8px;
+  border: 5px solid;
+  border-color: #fcd34d;
+}
+
+.point p {
+  font-weight: bold;
+  color: white;
+}
+
+/* notif-users */
+.notif-users {
+  font-size: 13px;
+  padding: 0 6px;
+  border-radius: 100%;
+  background-color: #ff1554;
+  color: white;
+  font-weight: 500;
+}
+
+.tayangan-profil-setting {
+  display: flex;
+  align-items: center;
+}
+
+.tayangan-profil-setting img {
+  height: 35px;
+  width: auto;
+}
+
+.tp {
+  margin-right: 15px;
+}
+/* start profil-users */
+.profil-users {
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.profil img {
+  height: 150px;
+  width: auto;
+  border-radius: 100%;
+}
+
+.pendapat {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.pendapat > input {
+  height: 35px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  border: none;
+  position: absolute;
+  margin-top: -175px;
+  margin-left: -30px;
+  padding: 0 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.titik1 {
+  height: 15px;
+  width: auto;
+  border-radius: 0 0 100% 100%;
+  background-color: #f9fafb;
+  border: none;
+  position: absolute;
+  margin-top: -148px;
+  margin-left: 43vh;
+  padding: 0 8px;
+  box-shadow: 1px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+.titik2 {
+  height: 7px;
+  width: auto;
+  border-radius: 100%;
+  background-color: aliceblue;
+  border: none;
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 43vh;
+  padding: 0 4px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.add-picture img {
+  height: 40px;
+  border-radius: 100%;
+  border: 3px solid white;
+  width: auto;
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 20px;
+}
+
+/* username */
+.username p {
+  font-weight: 500;
+}
+
+/* following/followers/like */
+.ffl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#total {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#space {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: rgba(0, 0, 0, 0.222);
+}
+
+#title {
+  color: rgba(0, 0, 0, 0.636);
+}
+
+/* action profile */
+.action-profil {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-friend img {
+  height: 20px;
+  transform: rotate(90deg);
+}
+
+.ikuti-profil,
+.pesan-profil {
+  padding: 15px 55px;
+  margin: 3px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 550;
+  background-color: #e4e4e7af;
+}
+
+.ikuti-profil {
+  color: white;
+  background-color: #ff1554;
+}
+
+.pesan-profil {
+  color: black;
+}
+
+.add-friend {
+  padding: 15px 20px;
+  margin: 3px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #e4e4e7af;
+  transition: transform 0.5s;
+}
+
+/* content-add-friend */
+.rotated {
+  transform: rotate(50deg);
+}
+
+.content-add-friend {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.5s ease, opacity 1.5s ease;
+  transition: transform 1.5s;
+}
+
+.content-add-friend.show {
+  display: block;
+  opacity: 1;
+  max-height: 500px; /* Adjust according to content height */
+}
+
+.title-add-friend {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.671);
+}
+
+.pembukus-friend {
+  margin: 20px;
+  display: flex;
+  overflow-x: auto; /* Tambahkan overflow-x untuk scrolling horizontal */
+}
+
+.friend-1 {
+  margin: 0 15px 0 0;
+  height: 100%;
+  width: max-content;
+  display: block;
+
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e4e4e772;
+}
+
+.friend-1 img {
+  height: 200px;
+  width: auto;
+  border-radius: 100%;
+}
+
+.name-friend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.name-friend img {
+  margin-left: 5px;
+  height: 20px;
+}
+
+.info-friend {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.671);
+}
+
+.action-friend {
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px 20px;
+  font-weight: 500;
+  color: white;
+  background-color: #ff1554;
+}
+/* end content-add-friend */
+
+/* postingan/repost/tersimpan */
+.prt {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #67676720;
+}
+
+.prt button {
+  margin: 0px 40px;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.prt button.active {
+  border-radius: 1px;
+  border-bottom: 4px solid #565656af;
+}
+
+.prt img {
+  height: 30px;
+  width: auto;
+}
+
+/* end postingan/repost/tersimpan */

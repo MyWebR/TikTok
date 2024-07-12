@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prt.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  header -->
+    <header>
+      <div class="nav-header">
+        <div class="back">
+          <img src="icon/left-arrow.png" alt="back" />
+        </div>
+        <!-- 
+        <div class="point">
+          <p>P</p>
+        </div>
+         -->
+        <div class="akun">
+          <div class="users">
+            <h2>Res</h2>
+          </div>
+          <!-- 
+          <div class="notif-users">
+            <p>2</p>
+          </div>
+           -->
+        </div>
+        <div class="tayangan-profil-setting">
+          <div class="tp">
+            <img src="icon/notification.png" alt="notification" />
+          </div>
+          <div class="settings">
+            <img src="icon/share.png" alt="share" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- profil -->
+    <div class="profil-users">
+      <!-- profil image -->
+      <div class="profil">
+        <img src="image/users.png" alt="" />
+      </div>
+      <!-- pendapat -->
+      <!-- 
+      <div class="pendapat">
+        <input type="text" placeholder="Pendapat..." />
+        <div class="titik1"></div>
+        <div class="titik2"></div>
+      </div>
+       -->
+      <!-- add-picture -->
+      <!-- 
+      <div class="add-picture">
+        <img src="icon/plus2.png" alt="add" />
+      </div>
+       -->
+      <!-- username -->
+      <div class="username">
+        <p>@restuardyansyh</p>
+      </div>
+    </div>
+    <!-- end profil -->
+
+    <!-- following/followers/like -->
+    <div class="ffl">
+      <div class="following">
+        <p id="total">198</p>
+        <p id="title">Mengikuti</p>
+      </div>
+      <p id="space">|</p>
+      <div class="followers">
+        <p id="total">64</p>
+        <p id="title">Pengikut</p>
+      </div>
+      <p id="space">|</p>
+      <div class="like">
+        <p id="total">115</p>
+        <p id="title">Suka</p>
+      </div>
+    </div>
+    <!-- end following/followers/like -->
+
+    <!-- action profil -->
+    <div class="action-profil">
+      <a
+        href="https://www.tiktok.com/@restuardynsyh?is_from_webapp=1&sender_device=pc"
+      >
+        <div class="ikuti-profil">Ikuti</div>
+      </a>
+      <a
+        href="https://www.tiktok.com/@restuardynsyh?is_from_webapp=1&sender_device=pc"
+      >
+        <div class="pesan-profil">Pesan</div>
+      </a>
+      <a href="#" id="toggle-add-friend">
+        <div class="add-friend">
+          <img src="icon/play.png" alt="tambahkan-teman" />
+        </div>
+      </a>
+    </div>
+    <!-- contetn add freind -->
+    <div class="content-add-friend">
+      <div class="title-add-friend">
+        <p>Saran Akun</p>
+        <p>Tampilkan semua</p>
+      </div>
+      <!-- pembungkus-friend -->
+      <div class="pembukus-friend">
+        <!-- friend-1 -->
+        <div class="friend-1">
+          <img src="image/pp lanang.jpg" alt="" />
+          <div class="name-friend"><p>Pria Sigma</p></div>
+          <div class="info-friend"><p>Mengikuti Anda</p></div>
+          <div class="action-friend"><p>Ikuti balik</p></div>
+        </div>
+        <!-- friend-2 -->
+        <div class="friend-1">
+          <img src="image/kominfo.png" alt="" />
+          <div class="name-friend">
+            <p>Kominfo</p>
+            <img src="icon/verified.png" alt="" />
+          </div>
+          <div class="info-friend"><p>Mengikuti Anda</p></div>
+          <div class="action-friend"><p>Ikuti balik</p></div>
+        </div>
+        <!-- friend-3 -->
+        <div class="friend-1">
+          <img src="image/anime.jpeg" alt="" />
+          <div class="name-friend">
+            <p>Wibukil</p>
+            <!-- <img src="icon/verified.png" alt=""> -->
+          </div>
+          <div class="info-friend"><p>Mengikuti Anda</p></div>
+          <div class="action-friend"><p>Ikuti balik</p></div>
+        </div>
+      </div>
+      <!-- end pembungkus friend -->
+    </div>
+    <!-- end action profil -->
+
+    <!-- postingan/repost/tersimpan -->
+    <div class="prt">
+      <div class="postingan">
+        <button id="postingan">
+          <img src="icon/postingan.png" alt="Postingan" />
+        </button>
+      </div>
+      <div class="repost">
+        <button id="repost">
+          <img src="icon/reload.png" alt="repost" />
+        </button>
+      </div>
+      <div class="tersimpan">
+        <button id="tersimpan">
+          <img src="icon/bookmark.png" alt="tersimpan" />
+        </button>
+      </div>
+    </div>
+    <!-- end postingan/repost/tersimpan -->
+
+    <!-- content ppt -->
+    <!-- POSTINGAN  -->
+    <div class="content-postingan" id="content-postingan">
+      <h2>Belum ada video</h2>
+      <p>Video yang diposting restuardynsyh akan muncul disini</p>
+    </div>
+    <!-- REPOST -->
+    <div class="content-repost" id="content-repost" style="display: none">
+      <div class="pembungkus-content-repost">
+        <!-- video-1 -->
+        <div class="video-1">
+          <a href="">
+            <img src="image/download.jpeg" alt="" />
+          </a>
+          <div class="status-video">
+            <img src="icon/tonton.png" alt="" />
+            <p>1jt</p>
+          </div>
+        </div>
+        <!-- video-2 -->
+        <div class="video-1">
+          <a href="">
+            <img src="image/download.jpeg" alt="" />
+          </a>
+          <div class="status-video">
+            <img src="icon/tonton.png" alt="" />
+            <p>1jt</p>
+          </div>
+        </div>
+        <!-- video-3 -->
+        <div class="video-1">
+          <a href="">
+            <img src="image/download.jpeg" alt="" />
+          </a>
+          <div class="status-video">
+            <img src="icon/tonton.png" alt="" />
+            <p>1jt</p>
+          </div>
+        </div>
+                <!-- video-3 -->
+                <div class="video-1">
+                  <a href="">
+                    <img src="image/download.jpeg" alt="" />
+                  </a>
+                  <div class="status-video">
+                    <img src="icon/tonton.png" alt="" />
+                    <p>1jt</p>
+                  </div>
+                </div>
+      </div>
+      <!-- end pembungkus -->
+    </div>
+
+    <!-- TERSIMPAN -->
+    <div class="content-tersimpan" id="content-tersimpan" style="display: none">
+      <h2>tersimpan</h2>
+    </div>
+    <!-- end content ppt -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
