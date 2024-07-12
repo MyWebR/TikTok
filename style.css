@@ -243,7 +243,7 @@ header {
 }
 
 .pembukus-friend {
-  margin: 20px;
+  margin: 0px;
   display: flex;
   overflow-x: auto; /* Tambahkan overflow-x untuk scrolling horizontal */
 }
