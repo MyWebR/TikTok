@@ -239,7 +239,16 @@ header {
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
+}
+
+.title-add-friend a {
   color: rgba(0, 0, 0, 0.671);
+}
+
+.saran-akun,
+.tampilkan-semua {
+  display: flex;
+  align-items: center;
 }
 
 .pembukus-friend {

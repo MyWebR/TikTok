@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Tampilkan-semua.css" />
+    <title>Tampilkan Semua</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="back">
+        <a href="index.html">
+          <img src="icon/left-arrow.png" alt="back" />
+        </a>
+      </div>
+      <div class="username">
+        <p>restuardynsyh</p>
+      </div>
+      <div class="kosong">
+        <span></span>
+      </div>
+    </header>
+    <!-- end header -->
+    <!----->
+    <!-- nav -->
+    <div class="nav">
+      <div class="mengikuti">
+        <button id="mengikuti">
+          <p>Mengikuti 198</p>
+        </button>
+      </div>
+      <div class="pengikut">
+        <button id="pengikut">
+          <p>Pengikut 64</p>
+        </button>
+      </div>
+      <div class="disarankan">
+        <button id="disarankan" class="active">
+          <p>Disarankan</p>
+        </button>
+      </div>
+    </div>
+    <!-- end nav -->
+    <!----->
+    <!-- content nav -->
+    <!-- mengikuti -->
+    <div class="content-mengikuti" id="content-mengikuti">
+      <div class="m-pembungkus">
+<img src="icon/padlock.png" alt="">
+
+        <p id="m-title">Daftar mengikuti milik pengguna ini bersifat privat</p>
+        <p id="m-desk">
+          Daftar mengikuti milik restuardynsyh saat ini disembunyikan
+        </p>
+      </div>
+    </div>
+    <!-- end mengikuti -->
+
+    <!-- pengikut -->
+    <div class="content-pengikut" id="content-pengikut">
+      <!-- search -->
+      <div class="search">
+        <form action="">
+          <img src="icon/search.png" alt="" />
+
+          <input type="text" placeholder="Cari" />
+        </form>
+      </div>
+      <!-- end search -->
+
+      <!-- teman -->
+      <div class="p-teman-1">
+        <div class="p-pp">
+          <img src="image/kominfo.png" alt="" />
+          <div class="p-user">
+            <div class="p-verif">
+              <p id="p-username">Kominfo</p>
+              <img src="icon/verified.png" alt="verifed" />
+            </div>
+            <p id="p-name">kominfoID</p>
+          </div>
+        </div>
+        <div class="p-action">
+          <button>
+            <p>Ikuti</p>
+          </button>
+        </div>
+      </div>
+      <!-- end teman -->
+    </div>
+    <!-- end pengikut -->
+
+    <!-- disarankan -->
+    <div class="content-disarankan" id="content-disarankan">
+      <!-- teman-1 -->
+      <div class="d-teman-1">
+        <img src="image/pp lanang.jpg" alt="" />
+        <!-- ket -->
+        <div class="d-ket">
+          <div class="d-name">
+            <p id="username">Pria Sigma</p>
+            <p id="status">Mengikuti Anda</p>
+          </div>
+          <div class="d-action">
+            <div class="hapus">
+              <button>
+                <p>Hapus</p>
+              </button>
+            </div>
+            <div class="folback">
+              <button>
+                <p>Ikuti Balik</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end disarankan -->
+
+    <!-- end content nav -->
+
+    <script src="js/tampilkan-semua.js"></script>
+  </body>
+</html>

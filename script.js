@@ -11,7 +11,6 @@ document
   });
 
 //  memunculkan content postingan/repost/tersimpan
-
 document.getElementById("postingan").addEventListener("click", function () {
   document.getElementById("content-postingan").style.display = "block";
   document.getElementById("content-repost").style.display = "none";

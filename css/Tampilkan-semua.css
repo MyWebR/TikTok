@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back img {
+  height: 30px;
+  width: auto;
+}
+
+.username p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* nav */
+.nav {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #67676720;
+}
+
+.nav button {
+  margin: 0px 25px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+.nav button.active {
+  border-radius: 1px;
+  border-bottom: 3px solid black;
+  opacity: 1;
+}
+
+.nav button p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #565656af;
+}
+
+.nav button.active p {
+  color: black;
+}
+
+/* Konten */
+.content-mengikuti,
+.content-pengikut,
+.content-disarankan {
+  display: none;
+}
+
+.content-mengikuti.active,
+.content-pengikut.active,
+.content-disarankan.active {
+  display: block;
+}
+
+/* content-disarankan */
+.d-teman-1 {
+  display: flex;
+  align-items: center;
+
+  margin: 10px;
+}
+
+.d-teman-1 img {
+  height: 125px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.d-name {
+  margin-bottom: 10px;
+}
+
+.d-name #username {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.d-name #status {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.d-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hapus button,
+.folback button {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.hapus button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  background-color: #e4e4e7af;
+}
+
+.folback button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #ff1554;
+}
+
+/* pengikut */
+.search {
+  position: relative; /* Menambahkan posisi relative */
+  margin: 10px 10px;
+}
+
+.search img {
+  position: absolute;
+  top: 50%; /* Mengatur posisi gambar di tengah vertikal */
+  left: 10px; /* Jarak dari kiri */
+  transform: translateY(-50%); /* Mengatur gambar agar vertikal di tengah */
+  height: 30px;
+  width: auto;
+}
+
+input {
+  height: 40px;
+  width: calc(
+    100% - 0px
+  ); /* Mengurangi lebar input untuk mengakomodasi gambar dan padding */
+  padding: 5px 0px 5px 45px; /* Padding kiri untuk mengakomodasi gambar */
+  border: none;
+  border-radius: 5px;
+  background-color: #d8d8d8af;
+  font-size: 20px;
+  font-weight: 500;
+  box-sizing: border-box;
+  caret-color: #ff1554; /* Mengatur warna kursor menjadi merah */
+}
+
+input:active,
+input:focus {
+  border: none;
+  outline: none; /* Menghapus outline default */
+}
+
+input::selection {
+  background: transparent; /* Menghapus background saat teks dipilih */
+}
+
+input::placeholder {
+  color: #a0a0a0; /* Warna placeholder */
+  font-weight: 500; /* Membuat placeholder bold */
+}
+
+/* teman */
+.p-teman-1 {
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-pp {
+  display: flex;
+  align-items: center;
+}
+
+.p-pp img {
+  height: 80px;
+}
+
+.p-user {
+  margin-left: 10px;
+}
+
+.p-user #p-username {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.p-user #p-name {
+  font-size: 15px;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.p-verif {
+  display: flex;
+  align-items: center;
+}
+
+.p-verif img {
+  height: 20px;
+  margin-left: 3px;
+}
+
+.p-action button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #ff1554;
+}
+
+.p-action button p {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* mengikuti */
+.m-pembungkus {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.m-pembungkus img {
+  margin-top: 155px;
+  height: 130px;
+  opacity: 0.5;
+}
+
+.m-pembungkus #m-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.m-pembungkus #m-desk {
+  font-size: 17px;
+  opacity: 0.5;
+  font-weight: 500;
+}
