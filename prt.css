@@ -19,31 +19,37 @@
   gap: 3px; /* Tambahkan jarak antar elemen jika diperlukan */
 }
 
-.pembungkus-content-repost .video {
+.pembungkus-content-repost .video-1 {
   position: relative; /* Pastikan elemen ini menjadi referensi untuk .status-video yang di dalamnya */
   flex: 1 1 calc(33.33% - 3px); /* Ukuran fleksibel, sesuaikan dengan jarak antar elemen */
   box-sizing: border-box; /* Pastikan padding dan border tidak mengubah ukuran elemen */
-  max-width: calc(33.33% - 3px); /* Maksimal lebar 33.33% dengan jarak */
+  max-width: calc(33.33% - 0px); /* Maksimal lebar 33.33% dengan jarak */
+  margin: 0;
+  padding: 0;
 }
 
 .video-1 img {
-  height: 154.5px;
-  width: auto; /* Pastikan gambar mengisi lebar penuh elemen */
+  height: 190px;
+  width: 100%; /* Pastikan gambar mengisi lebar penuh elemen */
 }
 
 .status-video {
+  position: absolute;
+  bottom: 10px; /* Sesuaikan dengan kebutuhan */
+  left: 10px; /* Sesuaikan dengan kebutuhan */
   display: flex;
   align-items: center;
-margin-top: -35px;
+  background-color: transparent;
+  margin: 0; /* Menghapus margin */
 }
 
 .status-video img {
-  height: 20px;
+  height: 19px;
 }
 
 .status-video p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   color: white;
   margin-left: 5px; /* Tambahkan jarak antara gambar dan teks */
 }

@@ -7,10 +7,22 @@
 }
 
 header {
-  margin: 20px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%; /* Pastikan lebar 100% */
+  box-sizing: border-box; /* Pastikan padding dan border diperhitungkan dalam ukuran elemen */
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Tambahkan latar belakang putih */
+  z-index: 1001; /* Pastikan header berada di atas konten lainnya */
+  padding: 20px; /* Pastikan padding tetap sama */
 }
 
 .back img {
@@ -24,12 +36,23 @@ header {
 }
 
 /* nav */
+.nav.fixed {
+  position: fixed;
+  margin-top: 75px; /* Sesuaikan dengan tinggi header */
+  width: 100%;
+  background-color: white; /* Tambahkan latar belakang putih */
+  z-index: 999; /* Pastikan nav berada di bawah header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opsional: tambahkan bayangan */
+}
+
 .nav {
-  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #67676720;
+  background-color: white; /* Tambahkan background untuk nav */
+  width: 100%; /* Lebar penuh */
+  transition: top 0.3s;
 }
 
 .nav button {
@@ -55,6 +78,13 @@ header {
 
 .nav button.active p {
   color: black;
+}
+
+.nav.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Pastikan di atas elemen lain */
+  border-bottom: 2px solid #67676720;
 }
 
 /* Konten */
@@ -185,6 +215,7 @@ input::placeholder {
 }
 
 .p-pp img {
+  border-radius: 100%;
   height: 80px;
 }
 

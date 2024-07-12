@@ -8,6 +8,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* header */
@@ -305,6 +306,63 @@ header {
 }
 /* end content-add-friend */
 
+/* like */
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Warna gelap semi-transparan */
+  z-index: 1000; /* Di atas semua elemen */
+}
+
+/* Popup Content */
+.popup-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001; /* Di atas overlay */
+  text-align: center;
+}
+
+.popup-content img {
+  margin: 20px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.popup-content #title-like {
+  margin: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.popup-content #desk-like {
+  margin: 20px;
+  font-size: 13px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 17px;
+  border-top: 1px solid rgb(193, 193, 193);
+  background-color: transparent;
+}
+/* end like */
+
 /* postingan/repost/tersimpan */
 .prt {
   margin-top: 15px;
@@ -312,6 +370,8 @@ header {
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid #67676720;
+  width: 100%; /* Pastikan lebar 100% */
+  box-sizing: border-box; /* Pastikan padding dan border diperhitungkan dalam ukuran elemen */
 }
 
 .prt button {
@@ -330,6 +390,14 @@ header {
 .prt img {
   height: 30px;
   width: auto;
+}
+
+.prt.fixed {
+  position: fixed;
+  top: 45px;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 6px 5px rgb(0, 0, 0, 0.1);
 }
 
 /* end postingan/repost/tersimpan */

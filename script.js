@@ -45,3 +45,53 @@ document.getElementById("tersimpan").addEventListener("click", function () {
 window.onload = function () {
   document.getElementById("postingan").classList.add("active");
 };
+
+// like
+document.addEventListener("DOMContentLoaded", function () {
+  const likeLink = document.querySelector(".like a");
+  const popupOverlay = document.getElementById("popup-overlay");
+  const popupContent = document.getElementById("popup-content");
+  const closePopupBtn = document.getElementById("close-popup");
+
+  // Fungsi untuk menampilkan popup
+  function showPopup() {
+    popupOverlay.style.display = "block";
+    popupContent.style.display = "block";
+  }
+
+  // Fungsi untuk menyembunyikan popup
+  function hidePopup() {
+    popupOverlay.style.display = "none";
+    popupContent.style.display = "none";
+  }
+
+  // Event listener untuk link "Suka"
+  likeLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Mencegah link default
+    showPopup();
+  });
+
+  // Event listener untuk menutup popup saat mengklik di luar popup
+  popupOverlay.addEventListener("click", function (event) {
+    if (event.target === popupOverlay) {
+      hidePopup();
+    }
+  });
+
+  // Event listener untuk tombol tutup di dalam popup
+  closePopupBtn.addEventListener("click", hidePopup);
+});
+
+// fixed prt
+document.addEventListener("DOMContentLoaded", function () {
+  var prt = document.querySelector(".prt");
+  var prtOffset = prt.offsetTop;
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > prtOffset) {
+      prt.classList.add("fixed");
+    } else {
+      prt.classList.remove("fixed");
+    }
+  });
+});
