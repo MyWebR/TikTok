@@ -75,6 +75,7 @@ header {
 }
 /* start profil-users */
 .profil-users {
+  background-color: #fcd34d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +85,7 @@ header {
 .profil img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .add-picture img {
@@ -104,6 +105,7 @@ header {
 
 /* following/followers/like */
 .ffl {
+  background-color: #f59e0b;
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -127,6 +129,7 @@ header {
 
 /* action profile */
 .action-profil {
+  background-color: rgb(135, 255, 235);
   display: flex;
   justify-content: center;
   margin: 20px 0;
@@ -230,6 +233,7 @@ header {
   overflow: hidden;
   transition: max-height 1.5s ease, opacity 1.5s ease;
   transition: transform 1.5s;
+  background-color: #e01919d6;
 }
 
 .content-add-friend.show {
@@ -244,6 +248,7 @@ header {
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
+  background-color: #4be019d6;
 }
 
 .title-add-friend a {
@@ -258,6 +263,8 @@ header {
 }
 
 .pembukus-friend {
+  background-color: #c5e019d6;
+
   margin: 0px;
   display: flex;
   overflow-x: auto; /* Tambahkan overflow-x untuk scrolling horizontal */
@@ -371,6 +378,8 @@ header {
 
 /* postingan/repost/tersimpan */
 .prt {
+  background-color: #1919e0d6;
+
   margin-top: 15px;
   display: flex;
   align-items: center;
