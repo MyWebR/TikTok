@@ -13,31 +13,20 @@ a {
 }
 
 /* header */
+
 header {
   position: fixed;
   height: 50px;
   width: 100%;
   top: 0;
   left: 0;
-  right: 0;
-  background-color: rgba(
-    65,
-    16,
-    16,
-    0.307
-  ); /* Tambahkan warna latar belakang */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  z-index: 1000; /* Pastikan header di atas elemen lainnya */
+  background-color: rgba(65, 16, 16, 0.307);
+  z-index: 1000;
 }
 
 .nav-header {
   text-align: center;
-  padding: 10px 20px; /* Tambahkan padding untuk ruang di dalam header */
-}
-
-.back img {
-  height: 25px;
-  width: auto;
+  padding: 10px 20px;
 }
 
 .akun {
@@ -100,50 +89,7 @@ header {
   border-radius: 50%;
 }
 
-.pendapat {
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
 
-.pendapat > input {
-  height: 35px;
-  width: 100px;
-  border-radius: 10px;
-  background-color: #f9fafb;
-  border: none;
-  position: absolute;
-  margin-top: -175px;
-  margin-left: -30px;
-  padding: 0 5px;
-  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
-}
-
-.titik1 {
-  height: 15px;
-  width: auto;
-  border-radius: 0 0 100% 100%;
-  background-color: #f9fafb;
-  border: none;
-  position: absolute;
-  margin-top: -148px;
-  margin-left: 43vh;
-  padding: 0 8px;
-  box-shadow: 1px 7px 5px rgba(0, 0, 0, 0.3);
-}
-
-.titik2 {
-  height: 7px;
-  width: auto;
-  border-radius: 100%;
-  background-color: aliceblue;
-  border: none;
-  position: absolute;
-  margin-top: -130px;
-  margin-left: 43vh;
-  padding: 0 4px;
-  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
-}
 
 .add-picture img {
   height: 40px;

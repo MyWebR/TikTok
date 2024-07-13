@@ -1,0 +1,85 @@
+        <!-- <div class="back">
+          <img src="icon/left-arrow.png" alt="back" />
+        </div> -->
+        <!-- 
+        <div class="point">
+          <p>P</p>
+        </div>
+         -->
+
+          <!-- 
+          <div class="notif-users">
+            <p>2</p>
+          </div>
+           -->
+
+
+        <!-- <div class="tayangan-profil-setting">
+          <div class="tp">
+            <img src="icon/notification.png" alt="notification" />
+          </div>
+          <div class="settings">
+            <img src="icon/share.png" alt="share" />
+          </div>
+        </div> -->
+
+
+              <!-- pendapat -->
+      <!-- 
+      <div class="pendapat">
+        <input type="text" placeholder="Pendapat..." />
+        <div class="titik1"></div>
+        <div class="titik2"></div>
+      </div>
+       -->
+      <!-- add-picture -->
+      <!-- 
+      <div class="add-picture">
+        <img src="icon/plus2.png" alt="add" />
+      </div>
+       -->
+
+.pendapat {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.pendapat > input {
+  height: 35px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  border: none;
+  position: absolute;
+  margin-top: -175px;
+  margin-left: -30px;
+  padding: 0 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.titik1 {
+  height: 15px;
+  width: auto;
+  border-radius: 0 0 100% 100%;
+  background-color: #f9fafb;
+  border: none;
+  position: absolute;
+  margin-top: -148px;
+  margin-left: 43vh;
+  padding: 0 8px;
+  box-shadow: 1px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+.titik2 {
+  height: 7px;
+  width: auto;
+  border-radius: 100%;
+  background-color: aliceblue;
+  border: none;
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 43vh;
+  padding: 0 4px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+}
