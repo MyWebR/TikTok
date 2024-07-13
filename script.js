@@ -133,9 +133,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // nav tersimpan
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const koleksiButton = document.getElementById("koleksi");
   const suaraButton = document.getElementById("suara");
   const contentKoleksi = document.getElementById("content-koleksi");
