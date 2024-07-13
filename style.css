@@ -87,9 +87,6 @@ header {
   margin-top: 100px;
   text-align: center;
   position: relative;
-  display: block;
-  align-items: center;
-  justify-content: center;
 }
 
 .profil img {
@@ -279,6 +276,7 @@ header {
   opacity: 0.8;
 }
 
+
 /* content-add-friend */
 .rotated {
   transform: rotate(50deg);
@@ -434,8 +432,6 @@ header {
 
 /* postingan/repost/tersimpan */
 .prt {
-  height: 100%;
-  width: auto;
   margin-top: 15px;
   display: flex;
   align-items: center;
