@@ -23,9 +23,7 @@ header {
 }
 
 .nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   padding: 10px 20px; /* Tambahkan padding untuk ruang di dalam header */
 }
 
@@ -35,9 +33,9 @@ header {
 }
 
 .akun {
-  margin-left: 47px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .users h2 {
@@ -453,7 +451,7 @@ header {
 
 .prt.fixed {
   position: fixed;
-  top: 35px;
+  top: 30px;
   z-index: 1000;
   background-color: white;
   box-shadow: 0 6px 5px rgb(0, 0, 0, 0.1);
