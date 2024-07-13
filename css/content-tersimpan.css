@@ -1,0 +1,102 @@
+/* music - 1 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.content-suara {
+  padding: 0;
+}
+
+.preset-music {
+  margin: 10px;
+}
+
+.music {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.music > button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+}
+
+.music > button img {
+  height: 80px;
+  border-radius: 5px;
+}
+
+#icon-play-1,
+#icon-play-2 {
+  position: absolute;
+  height: 25px;
+  left: 28px; /* Menggunakan left untuk posisi absolut */
+}
+
+#icon-pause-1,
+#icon-pause-2 {
+  position: absolute;
+  height: 35px;
+  left: 23px; /* Menggunakan left untuk posisi absolut */
+  display: none;
+}
+
+.info-music {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.info-music #nama-music {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.info-music #pencipta-music,
+.info-music #durasi-music {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.music a > img {
+  height: 35px;
+}
+
+.gunakan-music-1,
+.gunakan-music-2 {
+  margin-top: 10px;
+  display: none;
+}
+
+.gunakan-music-1 > button,
+.gunakan-music-2 > button {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff1554;
+}
+
+.gunakan-music-1 > button img,
+.gunakan-music-2 > button img {
+  height: 35px;
+  margin-right: 5px;
+}
+
+.gunakan-music-1 > button p,
+.gunakan-music-2 > button p {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="prt.css" />
+    <link rel="stylesheet" href="css/content-tersimpan.css" />
     <title>Profil restuardynsyh</title>
   </head>
   <body>
@@ -347,12 +348,82 @@
     <!-- TERSIMPAN -->
     <div class="content-tersimpan" id="content-tersimpan" style="display: none">
       <div class="nav-tersimpan">
-        <a href="" id="koleksi">Koleksi</a>
-        <a href="" id="suara">Suara</a>
+        <button id="koleksi"><p>Koleksi</p></button>
+        <button id="suara"><p>Suara</p></button>
       </div>
+
+      <!-- content nav tersimpan -->
+      <div class="content-koleksi" id="content-koleksi">
+        <p>koleksi</p>
+      </div>
+      <!-- --------------------------------------- -->
+      <div class="content-suara" id="content-suara">
+        <!-- music-1 -->
+        <div class="preset-music">
+          <div class="music">
+            <!-- btn-music -->
+            <button id="music-1">
+              <img src="image/pp-sound/sound casis.jpg" alt="renzx||9v" />
+              <img src="icon/play-music.png" alt="" id="icon-play-1" />
+              <img src="icon/pause.png" alt="" id="icon-pause-1" />
+              <!-- info-music -->
+              <div class="info-music">
+                <p id="nama-music">sound casis</p>
+                <a id="pencipta-music">Renzx||9v</a>
+                <p id="durasi-music">00:25</p>
+              </div>
+            </button>
+            <!-- music-selengkapnya -->
+            <a href="#">
+              <img src="icon/list.png" alt="" />
+            </a>
+          </div>
+          <!-- gunakan suara -->
+          <div class="gunakan-music-1">
+            <button>
+              <img src="icon/camera.png" alt="camera" />
+              <p>Gunakan suara</p>
+            </button>
+          </div>
+          <audio id="audio-1" src="music/sound-casis.mp3"></audio>
+        </div>
+        <!-- music-2 -->
+        <div class="preset-music">
+          <div class="music">
+            <!-- btn-music -->
+            <button id="music-2">
+              <img src="image/pp-sound/dreamoin.jpg" alt="DREAMOIN" />
+              <img src="icon/play-music.png" alt="" id="icon-play-2" />
+              <img src="icon/pause.png" alt="" id="icon-pause-2" />
+              <!-- info-music -->
+              <div class="info-music">
+                <p id="nama-music">Patience Another version</p>
+                <a id="pencipta-music">DREAMOIN</a>
+                <p id="durasi-music">00:35</p>
+              </div>
+            </button>
+            <!-- music-selengkapnya -->
+            <a href="#">
+              <img src="icon/list.png" alt="" />
+            </a>
+          </div>
+          <!-- gunakan suara -->
+          <div class="gunakan-music-2">
+            <button>
+              <img src="icon/camera.png" alt="camera" />
+              <p>Gunakan suara</p>
+            </button>
+          </div>
+          <audio id="audio-2" src="music/Patience Another version.mp3"></audio>
+        </div>
+      </div>
+      <!-- end content nav tersimpan -->
+      <!--  -->
     </div>
+
     <!-- end content ppt -->
 
     <script src="script.js"></script>
+    <script src="js/suara.js"></script>
   </body>
 </html>

@@ -132,3 +132,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 300); // Sesuaikan dengan durasi animasi
   });
 });
+
+
+// nav tersimpan
+document.addEventListener("DOMContentLoaded", function() {
+  const koleksiButton = document.getElementById("koleksi");
+  const suaraButton = document.getElementById("suara");
+  const contentKoleksi = document.getElementById("content-koleksi");
+  const contentSuara = document.getElementById("content-suara");
+
+  // Function to show koleksi content and hide suara content
+  function showKoleksi() {
+    contentKoleksi.style.display = "block";
+    contentSuara.style.display = "none";
+    koleksiButton.classList.add("active");
+    suaraButton.classList.remove("active");
+  }
+
+  // Function to show suara content and hide koleksi content
+  function showSuara() {
+    contentKoleksi.style.display = "none";
+    contentSuara.style.display = "block";
+    koleksiButton.classList.remove("active");
+    suaraButton.classList.add("active");
+  }
+
+  // Event listeners for buttons
+  koleksiButton.addEventListener("click", showKoleksi);
+  suaraButton.addEventListener("click", showSuara);
+
+  // Set koleksi as the default active tab
+  showKoleksi();
+});
