@@ -31,21 +31,21 @@
 }
 
 .music > button img {
-  height: 80px;
+  height: 70px;
   border-radius: 5px;
 }
 
 #icon-play-1,
 #icon-play-2 {
   position: absolute;
-  height: 25px;
+  height: 20px;
   left: 28px; /* Menggunakan left untuk posisi absolut */
 }
 
 #icon-pause-1,
 #icon-pause-2 {
   position: absolute;
-  height: 35px;
+  height: 30px;
   left: 23px; /* Menggunakan left untuk posisi absolut */
   display: none;
 }
@@ -73,7 +73,7 @@
 }
 
 .music a > img {
-  height: 35px;
+  height: 30px;
 }
 
 .gunakan-music-1,
@@ -96,7 +96,7 @@
 
 .gunakan-music-1 > button img,
 .gunakan-music-2 > button img {
-  height: 35px;
+  height: 30px;
   margin-right: 5px;
 }
 
