@@ -17,10 +17,9 @@
   color: #64748b;
 }
 /* end kontent postingan */
-
+/* ----------------------------------------------------------------------------------- */
 /* kontent-repost */
 .pembungkus-content-repost {
-  background-color: #a91df5d2;
   display: flex;
   flex-wrap: wrap; /* Membuat elemen turun ke bawah jika tidak muat */
   gap: 1px; /* Tambahkan jarak antar elemen jika diperlukan */
@@ -62,3 +61,7 @@
 }
 
 /* end kontent-repost */
+/* ----------------------------------------------------------------------------------- */
+/* Tersimpan */
+
+/* end Tersimpan */

@@ -7,6 +7,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -14,8 +21,7 @@ a {
 
 /* header */
 header {
-  
-  background-color: rgba(76, 252, 60, 0.767); /* Tambahkan warna latar belakang */
+  background-color: white;
 }
 
 .nav-header {
@@ -40,7 +46,7 @@ header {
 
 .nav-header > .point {
   border-radius: 100%;
-  background-color: #f59e0b;
+  background-color: white;
   padding: 0px 8px;
   border: 5px solid;
   border-color: #fcd34d;
@@ -76,7 +82,7 @@ header {
 }
 /* start profil-users */
 .profil-users {
-  background-color: #fcd34d;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +112,7 @@ header {
 
 /* following/followers/like */
 .ffl {
-  background-color: #f59e0b;
+  background-color: white;
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -130,7 +136,7 @@ header {
 
 /* action profile */
 .action-profil {
-  background-color: rgb(135, 255, 235);
+  background-color: white;
   display: flex;
   justify-content: center;
   margin: 20px 0;
@@ -234,7 +240,6 @@ header {
   overflow: hidden;
   transition: max-height 1.5s ease, opacity 1.5s ease;
   transition: transform 1.5s;
-  background-color: #e01919d6;
 }
 
 .content-add-friend.show {
@@ -249,7 +254,6 @@ header {
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
-  background-color: #4be019d6;
 }
 
 .title-add-friend a {
@@ -264,8 +268,6 @@ header {
 }
 
 .pembukus-friend {
-  background-color: #c5e019d6;
-
   margin: 0px;
   display: flex;
   overflow-x: auto; /* Tambahkan overflow-x untuk scrolling horizontal */
