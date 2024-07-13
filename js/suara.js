@@ -46,6 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
          if (audio4 !== audio) pauseAudio(audio4, iconPlay4, iconPause4, gunakanMusic4);
    
          playAudio(audio, iconPlay, iconPause, gunakanMusic);
+   
+         // Add event listener for when audio finishes
+         audio.addEventListener("ended", function () {
+           iconPlay.style.display = "block";
+           iconPause.style.display = "none";
+           gunakanMusic.style.display = "none";
+         });
        } else {
          pauseAudio(audio, iconPlay, iconPause, gunakanMusic);
        }
