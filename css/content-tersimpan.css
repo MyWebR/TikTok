@@ -57,7 +57,7 @@
 .info-music {
   margin-left: 10px;
   text-align: left;
-  width: calc(250px - 0px); /* Misalnya, atur lebar maksimal untuk info-music */
+  width: calc(230px - 0px); /* Misalnya, atur lebar maksimal untuk info-music */
   white-space: nowrap; /* Hindari pemisahan kata */
   overflow: hidden; /* Sembunyikan overflow */
   text-overflow: ellipsis; /* Tambahkan elipsis untuk menandakan bahwa teks terpotong */
