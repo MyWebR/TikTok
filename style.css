@@ -14,7 +14,8 @@ a {
 
 /* header */
 header {
-  background-color: white; /* Tambahkan warna latar belakang */
+  
+  background-color: rgba(76, 252, 60, 0.767); /* Tambahkan warna latar belakang */
 }
 
 .nav-header {
