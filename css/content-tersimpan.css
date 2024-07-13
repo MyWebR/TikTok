@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 /* music - 1 */
 * {
   box-sizing: border-box;
@@ -59,11 +60,16 @@
   font-weight: 500;
 }
 
-.info-music #pencipta-music,
+.info-music #pencipta-music {
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0.5;
+  font-family: "DM Serif Display", serif;
+}
+
 .info-music #durasi-music {
   font-size: 13px;
-  font-weight: 500;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .music a > img {
