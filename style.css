@@ -219,6 +219,58 @@ header {
   transition: transform 0.5s;
 }
 
+/* content-saran */
+.content-saran-akun {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Warna latar belakang putih dengan transparansi */
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+  z-index: 1001; /* Di atas overlay */
+  transform: translateY(100%); /* Awalnya di luar layar ke bawah */
+  transition: transform 0.3s ease-in-out; /* Animasi transisi */
+}
+
+.content-saran-akun.show {
+  transform: translateY(0); /* Tampilkan dengan animasi slide ke atas */
+}
+
+#overlay-black {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Efek gelap di belakang */
+  z-index: 1000; /* Di bawah konten saran */
+}
+
+#overlay-black.show {
+  display: block; /* Tampilkan overlay */
+}
+
+.saran-akun {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.saran-akun img {
+  height: 15px;
+  margin-left: 2px;
+  opacity: 0.8;
+}
+
+
 /* content-add-friend */
 .rotated {
   transform: rotate(50deg);

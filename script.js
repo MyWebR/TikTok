@@ -95,3 +95,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// content-saran
+document.addEventListener("DOMContentLoaded", function () {
+  var saranAkunLink = document.querySelector(".saran-akun a");
+  var contentSaranAkun = document.getElementById("content-saran-akun");
+  var overlayBlack = document.getElementById("overlay-black");
+
+  // Ketika tautan diklik
+  saranAkunLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Menghentikan perilaku default tautan
+
+    // Tambahkan atau hapus kelas untuk menampilkan atau menyembunyikan konten
+    contentSaranAkun.style.display = "block";
+    overlayBlack.style.display = "block";
+
+    // Tambahkan kelas animasi setelah sedikit waktu untuk memastikan transform berjalan
+    setTimeout(function () {
+      contentSaranAkun.classList.add("show");
+      overlayBlack.classList.add("show");
+    }, 10); // Sesuaikan dengan durasi animasi
+
+    // Scroll ke atas halaman
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Ketika overlay atau konten saran diklik akan hilang
+  overlayBlack.addEventListener("click", function () {
+    contentSaranAkun.classList.remove("show");
+    overlayBlack.classList.remove("show");
+
+    // Tunggu animasi selesai, kemudian sembunyikan konten
+    setTimeout(function () {
+      contentSaranAkun.style.display = "none";
+      overlayBlack.style.display = "none";
+    }, 300); // Sesuaikan dengan durasi animasi
+  });
+});
