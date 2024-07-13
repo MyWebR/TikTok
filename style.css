@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -19,7 +20,12 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white; /* Tambahkan warna latar belakang */
+  background-color: rgba(
+    65,
+    16,
+    16,
+    0.307
+  ); /* Tambahkan warna latar belakang */
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   z-index: 1000; /* Pastikan header di atas elemen lainnya */
 }
@@ -82,17 +88,16 @@ header {
 }
 /* start profil-users */
 .profil-users {
-  height: 100%;
-  width: auto;
-  margin-top: 100px;
-  text-align: center;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 0 0;
 }
 
 .profil img {
-  height: 150px;
-  width: auto;
-  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .pendapat {
@@ -157,10 +162,7 @@ header {
 
 /* following/followers/like */
 .ffl {
-  height: 100%;
-  width: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 20px;
   text-align: center;
@@ -183,12 +185,9 @@ header {
 
 /* action profile */
 .action-profil {
-  height: 100%;
-  width: auto;
-  margin-top: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .add-friend img {
@@ -275,7 +274,6 @@ header {
   margin-left: 2px;
   opacity: 0.8;
 }
-
 
 /* content-add-friend */
 .rotated {
