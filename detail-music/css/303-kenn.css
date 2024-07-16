@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  margin: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+nav img {
+  height: 30px;
+  width: 100%;
+}
+
+/* content */
+/*music */
+.content {
+  margin: 0 15px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.content button {
+  padding: 0;
+  margin: 0 10px 0 0;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#pp {
+  height: 100px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#play,
+#pause {
+  position: absolute;
+}
+
+#play {
+  height: 25px;
+  top: 35px;
+  left: 40px;
+  opacity: 0.9;
+}
+
+#pause {
+  height: 40px;
+  top: 26px;
+  left: 30px;
+  opacity: 0.9;
+  display: none;
+}
+
+/* info music */
+.info-music h2,
+.info-music > .pembuat,
+.info-music p {
+  margin-bottom: 0px;
+}
+
+.pembuat {
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.pembuat > a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+}
+
+.info-music > p {
+  margin-top: 10px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+/* add-fav */
+.add-fav {
+  margin: 15px;
+}
+
+.add-fav button {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.add-fav a {
+  text-decoration: none;
+}
+
+.add-fav a button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+}
+
+.add-fav img {
+  height: 25px;
+  margin-right: 5px;
+}
+
+.add-fav button p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* OPEN TT / SELENGKAPNYA */
+.open-tt {
+  margin: 0 15px;
+}
+
+.open-tt button {
+  height: 65vh;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.open-tt button p {
+  font-size: 20px;
+  font-weight: 500;
+}
