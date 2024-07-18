@@ -7,6 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+::selection {
+  background: #ff1554; /* Warna latar belakang saat teks dipilih */
+  color: white; /* Warna teks saat dipilih (opsional) */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -80,6 +85,7 @@ header {
 .tp {
   margin-right: 15px;
 }
+
 /* start profil-users */
 .profil-users {
   background-color: white;
@@ -87,6 +93,8 @@ header {
   flex-direction: column;
   align-items: center;
   margin: 30px 0 0 0;
+  padding: 20px;
+  border-radius: 10px; /* Opsional: Tambahkan border radius untuk sudut melengkung */
 }
 
 .profil img {
@@ -125,12 +133,13 @@ header {
 }
 
 #space {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: rgba(0, 0, 0, 0.222);
 }
 
 #title {
+  font-size: 13px;
   color: rgba(0, 0, 0, 0.636);
 }
 

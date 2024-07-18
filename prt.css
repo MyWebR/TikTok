@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+::selection {
+  background: #ff1554; /* Warna latar belakang saat teks dipilih */
+  color: white; /* Warna teks saat dipilih (opsional) */
+}
+
 .content-postingan h2 {
   font-size: 17px;
 }

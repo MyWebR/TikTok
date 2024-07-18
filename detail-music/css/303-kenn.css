@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+::selection {
+  background: #ff1554; /* Warna latar belakang saat teks dipilih */
+  color: white; /* Warna teks saat dipilih (opsional) */
+}
+
 body {
   margin: 0;
   padding: 0;
