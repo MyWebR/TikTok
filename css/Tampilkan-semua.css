@@ -192,13 +192,34 @@ input:focus {
   outline: none; /* Menghapus outline default */
 }
 
-input::selection {
-  background: transparent; /* Menghapus background saat teks dipilih */
+::selection {
+  background: #ff1554; /* Warna latar belakang saat teks dipilih */
+  color: white; /* Warna teks saat dipilih (opsional) */
 }
 
 input::placeholder {
   color: #a0a0a0; /* Warna placeholder */
   font-weight: 500; /* Membuat placeholder bold */
+}
+
+.suggestions {
+  border: 1px solid #cccccc36;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  background: white;
+  z-index: 1000;
+  width: calc(100% - 0px);
+  display: none;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
 }
 
 /* teman */

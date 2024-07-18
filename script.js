@@ -163,3 +163,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set koleksi as the default active tab
   showKoleksi();
 });
+
+// tidak bisa di klik kanan gambarnya
+// Menonaktifkan klik kanan pada gambar dengan class "prevent-right-click"
+document.querySelectorAll(".prevent-right-click").forEach((img) => {
+  img.addEventListener("contextmenu", (event) => event.preventDefault());
+});
+
+// Untuk menonaktifkan klik kanan secara global pada seluruh gambar di halaman
+document.addEventListener("contextmenu", (event) => {
+  if (event.target.tagName === "IMG") {
+    event.preventDefault();
+  }
+});

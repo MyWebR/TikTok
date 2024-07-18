@@ -73,3 +73,74 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // pencarian akun
+document
+  .getElementById("input-pencarian")
+  .addEventListener("input", function () {
+    const query = this.value.toLowerCase();
+    const usernames = document.querySelectorAll(
+      "#content-pengikut #p-username"
+    );
+    const suggestions = document.getElementById("suggestions");
+
+    // Clear previous suggestions
+    suggestions.innerHTML = "";
+
+    if (query) {
+      usernames.forEach((username) => {
+        if (username.textContent.toLowerCase().includes(query)) {
+          const suggestionItem = document.createElement("div");
+          suggestionItem.className = "suggestion-item";
+          suggestionItem.textContent = username.textContent;
+
+          suggestionItem.addEventListener("click", function () {
+            document.getElementById("input-pencarian").value =
+              username.textContent;
+            suggestions.innerHTML = "";
+            username.scrollIntoView({ behavior: "smooth", block: "center" });
+          });
+
+          suggestions.appendChild(suggestionItem);
+        }
+      });
+
+      if (suggestions.childElementCount > 0) {
+        suggestions.style.display = "block";
+      } else {
+        suggestions.style.display = "none";
+      }
+    } else {
+      suggestions.style.display = "none";
+    }
+  });
+
+document
+  .getElementById("form-pencarian")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const query = document
+      .getElementById("input-pencarian")
+      .value.toLowerCase();
+    const usernames = document.querySelectorAll(
+      "#content-pengikut #p-username"
+    );
+
+    usernames.forEach((username) => {
+      if (username.textContent.toLowerCase() === query) {
+        username.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
+  });
+
+// tidak bisa di klik kanan gambarnya
+// Menonaktifkan klik kanan pada gambar dengan class "prevent-right-click"
+document.querySelectorAll(".prevent-right-click").forEach((img) => {
+  img.addEventListener("contextmenu", (event) => event.preventDefault());
+});
+
+// Untuk menonaktifkan klik kanan secara global pada seluruh gambar di halaman
+document.addEventListener("contextmenu", (event) => {
+  if (event.target.tagName === "IMG") {
+    event.preventDefault();
+  }
+});
